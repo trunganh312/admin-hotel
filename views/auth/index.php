@@ -1,6 +1,6 @@
 <?php
-include "../../config/connection.php";
-include "../../controllers/UserController.php";
+include_once __DIR__ . "/../../config/connection.php";
+include_once __DIR__ . "/../../controllers/UserController.php";
 
 // Xử lý yêu cầu
 $action = $_GET['action'] ?? 'login';
@@ -21,4 +21,3 @@ switch ($action) {
         $controller->login();
         break;
 }
-?>
